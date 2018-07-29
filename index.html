@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>woolworths</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-first">
+            <p>WoolWorths</p>
+        </div>
+        <div class="second-header flex-header">
+            <p>2018 shopping survey</p>
+            <div class="gift-img"></div>
+        </div>
+        <div class="third-header flex-header">
+            <img src="./flag.png" class="flag-img" alt="">
+            <p>July 25, 2018</p>
+        </div>
+    </div>
+    <div class="content-body">
+        <div class="container main-page">
+            <div style="width: 38%">
+                <img src="./woman.png" class="body-img" alt="">
+            </div>
+            <div>
+                <p class="title">Dear WoolWorths Shopper,</p>
+                <p class="second-title">please tell us about your woolworths experience and as a thank you, you can select from several exclusive
+                    offer rewards!</p>
+                <p class="information">User Refrence:
+                    <span>122333</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p class="title">2018 All Rights Reserved.</p>
+        <p class="second-title">
+            This website is not affiliated with or endorsed by Woolworths and does not claim to represent, or own any of the trademarks,
+            tradenames or rights associated with any of the products which are the property of their respective owners who
+            do not own, endorse, or promote this site. All images on this site are readily available in various places on
+            the Internet and believed to be in public domain according to the U.S. Copyright Fair Use Act (title 17, U.S.
+            Code). *Trial offers offered on the last page require shipping and handling fees. See manufacturer’s site for
+            details as terms vary with offers.
+        </p>
+    </div>
+
+    <!-- All Question Modals -->
+
+    <!-- First Modal shows -->
+    <div id="myModalBase" role="dialog" class="modal modal-first">
+        <div class="modal-content">
+            <div class="question-box">
+                <p class="title">Dear WoolWorths Shopper,</p>
+                <p class="second-title-question">You have been selected to get an exclusive reward!</p>
+                <p class="second-title-question">To qualify for this special offer, simply complete our 30-second marketing survey about your experiences
+                    with Woolworths.</p>
+                <div class="timer">
+                    <p>Available for the Next</p>
+                    <p id="demo" class="p-timer"></p>
+                    <p>minutes</p>
+                </div>
+                <p class="second-title-question">Click
+                    <span style="font-weight: bold">OK</span> to start</p>
+                <button class="answer-btn" id="btnanswer">Ok</button>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" role="dialog" class="modal">
+        <div class="modal-content">
+            <div class="question-box">
+                <div class="second-title">Question 1 of 8</div>
+                <div class="title">What is your gender?</div>
+                <button class="answer-btn" id="btnanswer1">Male</button>
+                <button class="answer-btn" id="btnanswer1-2">Female</button>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- The Modal1 -->
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <div class="question-box">
+                <div class="second-title">Question 2 of 8</div>
+                <div class="title">What is your gender?</div>
+                <button class="answer-btn" id="btnanswer2">Male</button>
+                <button class="answer-btn" id="btnanswer2-2">Female</button>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- The Modal2 -->
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <div class="question-box">
+                <div class="second-title">Question 3 of 8</div>
+                <div class="title">What is your gender?</div>
+                <button class="answer-btn" id="btnanswer3">Male</button>
+                <button class="answer-btn" id="btnanswer3-2">Female</button>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- The Modal3 -->
+    <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <div class="question-box">
+                <div class="second-title">Question 3 of 8</div>
+                <div class="title">What is your gender?</div>
+                <button class="answer-btn" id="btnanswer4">Male</button>
+                <button class="answer-btn" id="btnanswer4-2">Female</button>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- The Modal4 -->
+    <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <div class="question-box">
+                <div class="second-title">Question 4 of 8</div>
+                <div class="title">What is your gender?</div>
+                <button class="answer-btn" id="btnanswer5">Male</button>
+                <button class="answer-btn" id="btnanswer5-2">Female</button>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- The Modal5 -->
+    <div id="myModal5" class="modal">
+        <div class="modal-content">
+            <div class="question-box">
+                <div class="second-title">Question 5 of 8</div>
+                <div class="title">What is your gender?</div>
+                <button class="answer-btn" id="btnanswer6">Male</button>
+                <button class="answer-btn" id="btnanswer6-2">Female</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- The Modal6 -->
+    <div id="myModal6" class="modal">
+        <div class="modal-content">
+            <div class="question-box">
+                <div class="second-title">Question 6 of 8</div>
+                <div class="title">What is your gender?</div>
+                <button class="answer-btn" id="btnanswer7">Male</button>
+                <button class="answer-btn" id="btnanswer7-2">Female</button>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- The Modal7 -->
+    <div id="myModal7" class="modal">
+        <div class="modal-content">
+            <div class="question-box">
+                <div class="second-title">Question 7 of 8</div>
+                <div class="title">What is your gender?</div>
+                <button class="answer-btn" id="btnanswer8">Male</button>
+                <button class="answer-btn" id="btnanswer8-2">Female</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Last Modal -->
+    <div id="myModalLast" role="dialog" class="modal modal-last">
+        <div class="header">
+            <div class="header-first">
+                <p>WoolWorths</p>
+            </div>
+            <div class="second-header flex-header">
+                <p>2018 shopping survey</p>
+                <div class="gift-img"></div>
+            </div>
+            <div class="third-header flex-header">
+                <img src="./flag.png" class="flag-img" alt="">
+                <p>July 25, 2018</p>
+            </div>
+        </div>
+        <div class="content">
+            <p class="title">Thank you for completing the survey!</p>
+            <p class="second-title">with sincere thanks, you may now choose (1) of the following exclusive offer rewards below.</p>
+            <div class="flex-row">
+                <img src="./fire.png" class="fire-img" alt="">
+                <p class="second-title">Act fast, product availability is running low!</p>
+            </div>
+            <div class="content-box">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="border">
+                            <div class="flex-row">
+                                <div class="back-offer"></div>
+                                <div class="offer-text">
+                                    <p class="second-title">Celebrity Skincare Kit</p>
+                                    <p class="information">better than Botox!Get Hollywood's best kept beauty secret</p>
+                                    <div class="flex-row">
+                                        <p class="red-text">$249.95</p>
+                                        <p class="green-text">$0.00!</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <p class="shipping">Shipping: $1.99</p>
+                                        <p class="number">Qty Left:
+                                            <span>1</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="answer-btn">I'll Choose This</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 box-offer">
+                        <div class="border">
+                            <div class="flex-row">
+                                <div class="back-offer"></div>
+                                <div class="offer-text">
+                                    <p class="second-title">Celebrity Skincare Kit</p>
+                                    <p class="information">better than Botox!Get Hollywood's best kept beauty secret</p>
+                                    <div class="flex-row">
+                                        <p class="red-text">$249.95</p>
+                                        <p class="green-text">$0.00!</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <p class="shipping">Shipping: $1.99</p>
+                                        <p class="number">Qty Left:
+                                            <span>1</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="answer-btn">I'll Choose This</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 box-offer">
+                        <div class="border">
+                            <div class="flex-row">
+                                <div class="back-offer"></div>
+                                <div class="offer-text">
+                                    <p class="second-title">Celebrity Skincare Kit</p>
+                                    <p class="information">better than Botox!Get Hollywood's best kept beauty secret</p>
+                                    <div class="flex-row">
+                                        <p class="red-text">$249.95</p>
+                                        <p class="green-text">$0.00!</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <p class="shipping">Shipping: $1.99</p>
+                                        <p class="number">Qty Left:
+                                            <span>1</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="answer-btn">I'll Choose This</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 box-offer">
+                        <div class="border">
+                            <div class="flex-row">
+                                <div class="back-offer"></div>
+                                <div class="offer-text">
+                                    <p class="second-title">Celebrity Skincare Kit</p>
+                                    <p class="information">better than Botox!Get Hollywood's best kept beauty secret</p>
+                                    <div class="flex-row">
+                                        <p class="red-text">$249.95</p>
+                                        <p class="green-text">$0.00!</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <p class="shipping">Shipping: $1.99</p>
+                                        <p class="number">Qty Left:
+                                            <span>1</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="answer-btn">I'll Choose This</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 box-offer">
+                        <div class="border">
+                            <div class="flex-row">
+                                <div class="back-offer"></div>
+                                <div class="offer-text">
+                                    <p class="second-title">Celebrity Skincare Kit</p>
+                                    <p class="information">better than Botox!Get Hollywood's best kept beauty secret</p>
+                                    <div class="flex-row">
+                                        <p class="red-text">$249.95</p>
+                                        <p class="green-text">$0.00!</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <p class="shipping">Shipping: $1.99</p>
+                                        <p class="number">Qty Left:
+                                            <span>1</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="answer-btn">I'll Choose This</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // default open first question modal
+        $(document).ready(function () {
+            $('#myModalBase').show();
+        });
+        // Get the modal
+        var modalBase = document.getElementById('myModalBase');
+        var modal = document.getElementById('myModal');
+        var modal1 = document.getElementById('myModal1');
+        var modal2 = document.getElementById('myModal2');
+        var modal3 = document.getElementById('myModal3');
+        var modal4 = document.getElementById('myModal4');
+        var modal5 = document.getElementById('myModal5');
+        var modal6 = document.getElementById('myModal6');
+        var modal7 = document.getElementById('myModal7');
+        var myModalLast = document.getElementById('myModalLast');
+
+        // Get the button that opens the modal
+        var btnAnswer = document.getElementById("btnanswer");
+        var btnAnswer1 = document.getElementById("btnanswer1");
+        var btnAnswer1_2 = document.getElementById("btnanswer1-2");
+        var btnAnswer2 = document.getElementById("btnanswer2");
+        var btnAnswer2_2 = document.getElementById("btnanswer2-2");
+        var btnAnswer3 = document.getElementById("btnanswer3");
+        var btnAnswer3_2 = document.getElementById("btnanswer3-2");
+        var btnAnswer4 = document.getElementById("btnanswer4");
+        var btnAnswer4_2 = document.getElementById("btnanswer4-2");
+        var btnAnswer5 = document.getElementById("btnanswer5");
+        var btnAnswer5_2 = document.getElementById("btnanswer5-2");
+        var btnAnswer6 = document.getElementById("btnanswer6");
+        var btnAnswer6_2 = document.getElementById("btnanswer6-2");
+        var btnAnswer7 = document.getElementById("btnanswer7");
+        var btnAnswer7_2 = document.getElementById("btnanswer7-2");
+        var btnanswer8 = document.getElementById("btnanswer8");
+        var btnanswer8_2 = document.getElementById("btnanswer8-2");
+
+        // When the user clicks the button, open the modal 
+        btnAnswer.onclick = function () {
+            myModal.style.display = "block";
+            modalBase.style.display = "none";
+        }
+        btnAnswer1.onclick = function () {
+            modal1.style.display = "block";
+            modal.style.display = "none";
+        }
+        btnAnswer1_2.onclick = function () {
+            modal1.style.display = "block";
+            modal.style.display = "none";
+        }
+        btnAnswer2.onclick = function () {
+            modal2.style.display = "block";
+            modal1.style.display = "none";
+        }
+        btnAnswer2_2.onclick = function () {
+            modal2.style.display = "block";
+            modal1.style.display = "none";
+        }
+        btnAnswer3.onclick = function () {
+            modal3.style.display = "block";
+            modal2.style.display = "none";
+        }
+        btnAnswer3_2.onclick = function () {
+            modal3.style.display = "block";
+            modal2.style.display = "none";
+        }
+        btnAnswer4.onclick = function () {
+            modal4.style.display = "block";
+            modal3.style.display = "none";
+        }
+        btnAnswer4_2.onclick = function () {
+            modal4.style.display = "block";
+            modal3.style.display = "none";
+        }
+        btnAnswer5.onclick = function () {
+            modal5.style.display = "block";
+            modal4.style.display = "none";
+        }
+        btnAnswer5_2.onclick = function () {
+            modal5.style.display = "block";
+            modal4.style.display = "none";
+        }
+        btnAnswer6.onclick = function () {
+            modal6.style.display = "block";
+            modal5.style.display = "none";
+        }
+        btnAnswer6_2.onclick = function () {
+            modal6.style.display = "block";
+            modal5.style.display = "none";
+        }
+        btnAnswer7.onclick = function () {
+            modal7.style.display = "block";
+            modal6.style.display = "none";
+        }
+        btnAnswer7_2.onclick = function () {
+            modal7.style.display = "block";
+            modal6.style.display = "none";
+        }
+
+        // When the user clicks on last modal, close the modal
+        btnanswer8.onclick = function () {
+            myModalLast.style.display = "block"
+            modal7.style.display = "none";
+        }
+        btnanswer8_2.onclick = function () {
+            myModalLast.style.display = "block"
+            modal7.style.display = "none";
+        }
+
+
+
+        // Timer
+        // Set the date we're counting down to
+        var countDownDate = new Date("Sep 5, 2018 15:41:78").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = minutes + "m " + seconds;
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+
+</body>
+
+</html>
